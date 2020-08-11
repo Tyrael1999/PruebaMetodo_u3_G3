@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.VistaPrincipal">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #11182f;">
+         <children>
+            <Text fill="WHITE" layoutX="214.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BuscaCovid" textAlignment="CENTER" wrappingWidth="371.13671875">
+               <font>
+                  <Font name="Tahoma" size="53.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="iniciarJuegoBT" layoutX="236.0" layoutY="386.0" prefHeight="104.0" prefWidth="339.0" style="-fx-background-color: #10272f; -fx-background-radius: 10;" text="Iniciar Juego" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXCheckBox fx:id="principianteCB" layoutX="221.0" layoutY="233.0" prefHeight="22.0" prefWidth="0.0" text="." textAlignment="CENTER">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXCheckBox>
+            <Text fill="WHITE" layoutX="161.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Principiante" textAlignment="CENTER" wrappingWidth="141.13671875">
+               <font>
+                  <Font name="Tahoma" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="325.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dificultades" textAlignment="CENTER" wrappingWidth="149.13671875">
+               <font>
+                  <Font name="Tahoma" size="24.0" />
+               </font>
+            </Text>
+            <JFXCheckBox fx:id="intermedioCB" layoutX="395.0" layoutY="233.0" prefHeight="22.0" prefWidth="0.0" text="." textAlignment="CENTER">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXCheckBox>
+            <JFXCheckBox fx:id="avanzadoCB" layoutX="581.0" layoutY="233.0" prefHeight="22.0" prefWidth="0.0" text="." textAlignment="CENTER">
+               <font>
+                  <Font size="1.0" />
+               </font>
+            </JFXCheckBox>
+            <Text fill="WHITE" layoutX="335.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Intermedio" textAlignment="CENTER" wrappingWidth="141.13671875">
+               <font>
+                  <Font name="Tahoma" size="26.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="521.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avanzado" textAlignment="CENTER" wrappingWidth="141.13671875">
+               <font>
+                  <Font name="Tahoma" size="26.0" />
+               </font>
+            </Text>
+            <ImageView fx:id="virus" fitHeight="51.0" fitWidth="60.0" layoutX="184.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="virus1" fitHeight="51.0" fitWidth="60.0" layoutX="555.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
