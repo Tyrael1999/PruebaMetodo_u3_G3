@@ -25,7 +25,7 @@
                   <Font name="Tahoma" size="53.0" />
                </font>
             </Text>
-            <JFXButton fx:id="iniciarJuegoBT" layoutX="236.0" layoutY="386.0" prefHeight="104.0" prefWidth="339.0" style="-fx-background-color: #10272f; -fx-background-radius: 10;" text="Iniciar Juego" textFill="WHITE">
+            <JFXButton id="iniciarJuego" fx:id="iniciarJuegoBT" layoutX="236.0" layoutY="386.0" prefHeight="104.0" prefWidth="339.0" style="-fx-background-color: #10272f; -fx-background-radius: 10;" text="Iniciar Juego" textFill="WHITE">
                <font>
                   <Font name="Tahoma" size="22.0" />
                </font>
