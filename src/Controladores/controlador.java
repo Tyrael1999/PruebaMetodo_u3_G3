@@ -1,6 +1,7 @@
 package Controladores;
 
 import com.jfoenix.controls.JFXButton;
+import javafx.animation.AnimationTimer;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
@@ -8,6 +9,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class controlador {
@@ -15,6 +17,39 @@ public class controlador {
     private VBox cajaMatriz;
     @FXML
     private JFXButton reiniciarJuegoBT;
+    @FXML
+    private Text tiempo;
+
+    private void cronometro(){
+        AnimationTimer timer = new AnimationTimer() {
+            private long inicioT;
+            private long tiempoCalculado = 0;
+            private long fraccion = 0;
+
+            @Override
+            public void start() {
+                inicioT = System.currentTimeMillis() - fraccion;
+                super.start();
+            }
+
+            @Override
+            public void stop() {
+                super.stop();
+                fraccion = System.currentTimeMillis() - inicioT;
+            }
+
+            @Override
+            public void handle(long now) {
+                long newTime = System.currentTimeMillis();
+                if (inicioT + 1000 <= newTime) {
+                    long deltaT = (newTime - inicioT) / 1000;
+                    tiempoCalculado += deltaT;
+                    inicioT += 1000 * deltaT;
+                    tiempo.setText(Long.toString(tiempoCalculado));
+                }
+            }
+        };
+    }
     private void EventoC(Rectangle r, int i, int j) {
 
 
