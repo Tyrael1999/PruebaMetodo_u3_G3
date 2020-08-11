@@ -23,11 +23,12 @@
                   <Font name="Tahoma" size="35.0" />
                </font>
             </Text>
-            <JFXButton id="reiniciarJuegoBT" fx:id="reiniciarJuegoBT" onAction="#reiniciarJuego" layoutX="22.0" layoutY="48.0" prefHeight="32.0" prefWidth="218.0" style="-fx-background-color: #10272f; -fx-background-radius: 10;" text="Reiniciar Juego" textFill="WHITE">
+            <JFXButton id="reiniciarJuego" fx:id="reiniciarJuegoBT" onAction="#reiniciarJuego" layoutX="22.0" layoutY="48.0" prefHeight="32.0" prefWidth="218.0" style="-fx-background-color: #10272f; -fx-background-radius: 10;" text="Reiniciar Juego" textFill="WHITE">
                <font>
                   <Font name="Tahoma" size="22.0" />
                </font>
             </JFXButton>
+            <Text fill="WHITE" layoutX="639.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo" fx:id="tiempo" id="tiempo" />
          </children>
       </AnchorPane>
    </children>
