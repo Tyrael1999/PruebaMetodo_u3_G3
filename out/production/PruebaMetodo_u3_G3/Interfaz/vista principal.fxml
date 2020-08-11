@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.VistaPrincipal">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.VistaPrincipal">
    <columnConstraints>
       <ColumnConstraints />
    </columnConstraints>
@@ -18,19 +18,19 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #11182f;">
+      <AnchorPane fx:id="principalAP" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #11182f;">
          <children>
             <Text fill="WHITE" layoutX="214.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BuscaCovid" textAlignment="CENTER" wrappingWidth="371.13671875">
                <font>
                   <Font name="Tahoma" size="53.0" />
                </font>
             </Text>
-            <JFXButton fx:id="iniciarJuegoBT" layoutX="236.0" layoutY="386.0" prefHeight="104.0" prefWidth="339.0" style="-fx-background-color: #10272f; -fx-background-radius: 10;" text="Iniciar Juego" textFill="WHITE">
+            <JFXButton fx:id="iniciarJuegoBT" layoutX="236.0" layoutY="386.0" onAction="#iniciar" prefHeight="104.0" prefWidth="339.0" style="-fx-background-color: #10272f; -fx-background-radius: 10;" text="Iniciar Juego" textFill="WHITE">
                <font>
                   <Font name="Tahoma" size="22.0" />
                </font>
             </JFXButton>
-            <JFXCheckBox fx:id="principianteCB" layoutX="221.0" layoutY="233.0" prefHeight="22.0" prefWidth="0.0" text="." textAlignment="CENTER">
+            <JFXCheckBox fx:id="principianteCB" layoutX="221.0" layoutY="233.0" onAction="#principiante" prefHeight="22.0" prefWidth="0.0" text="." textAlignment="CENTER">
                <font>
                   <Font size="1.0" />
                </font>
@@ -45,12 +45,12 @@
                   <Font name="Tahoma" size="24.0" />
                </font>
             </Text>
-            <JFXCheckBox fx:id="intermedioCB" layoutX="395.0" layoutY="233.0" prefHeight="22.0" prefWidth="0.0" text="." textAlignment="CENTER">
+            <JFXCheckBox fx:id="intermedioCB" layoutX="395.0" layoutY="233.0" onAction="#intermedio" prefHeight="22.0" prefWidth="0.0" text="." textAlignment="CENTER">
                <font>
                   <Font size="1.0" />
                </font>
             </JFXCheckBox>
-            <JFXCheckBox fx:id="avanzadoCB" layoutX="581.0" layoutY="233.0" prefHeight="22.0" prefWidth="0.0" text="." textAlignment="CENTER">
+            <JFXCheckBox fx:id="avanzadoCB" layoutX="581.0" layoutY="233.0" onAction="#avanzado" prefHeight="22.0" prefWidth="0.0" text="." textAlignment="CENTER">
                <font>
                   <Font size="1.0" />
                </font>
